@@ -6,10 +6,100 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/svg+xml" href="./logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
-    <title>Auxilium Project</title>
+    <title>Auxilium Project — Cyber Dev</title>
 </head>
 <body>
-   <h1>Welcome to Auxilium Project</h1>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="./">
+                <img src="./logo.svg" alt="Auxilium logo" class="logo">
+                <span class="brand-text">Auxilium</span>
+            </a>
+            <nav class="site-nav">
+                <a href="#features">Features</a>
+                <a href="#projects">Projects</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <h1 class="hero-title">Auxilium - Cyber Dev Toolkit</h1>
+                <p class="hero-sub">Small project by friends. Tools, demos, and shared experiments for web and security tooling.</p>
+
+                <p class="hero-ctas">
+                    <a class="btn primary" href="#features">Explore</a>
+                </p>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">What you'll find</h2>
+                <div class="cards">
+                    <article class="card">
+                        <h3>Security Tools</h3>
+                        <p>Lean, practical utilities for scanning, parsing, and automation used during web and network security work.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Forensics & RE Demos</h3>
+                        <p>Reproducible demos and walkthroughs for forensic analysis and reverse engineering techniques-ideal for learning and sharing findings.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Collaboration</h3>
+                        <p>Shared experiments and project links from contributors - quick access to tooling and writeups from the team.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Web Development</h3>
+                        <p>Creating modern web applications with a focus on performance, security, and user experience.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <p class="intro" style="text-align:center;color:var(--muted);margin:0 0 18px">Featured contributor pages — focused tooling and writeups.</p>
+
+                <div class="project-grid">
+                    <a class="project-card" href="https://d3xtract.github.io" target="_blank" rel="noopener">
+                        <div class="project-left">
+                            <svg class="proj-ico" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"/><path d="M12 3v18"/></svg>
+                        </div>
+                        <div class="project-body">
+                            <strong>d3xtract</strong>
+                            <div class="role">Networking · Traffic tooling</div>
+                            <p class="proj-desc">Network-focused tools and scripts for capture, analysis and automation - packet tooling, probes and helpers.</p>
+                        </div>
+                    </a>
+
+                    <a class="project-card" href="https://scmisa.github.io" target="_blank" rel="noopener">
+                        <div class="project-left">
+                            <svg class="proj-ico" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+                        </div>
+                        <div class="project-body">
+                            <strong>scmisa</strong>
+                            <div class="role">Forensics · Reverse engineering</div>
+                            <p class="proj-desc">Case studies, tooling and RE notes - memory analysis, binary tooling and investigative writeups.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <small>Built by Project Auxilium — Contributors: d3xtract &amp; scmisa • <a href="https://github.com/Project-Auxilium" target="_blank" rel="noopener">GitHub</a></small>
+        </div>
+    </footer>
 </body>
 </html>
